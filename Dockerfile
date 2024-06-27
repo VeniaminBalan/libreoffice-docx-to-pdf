@@ -18,3 +18,5 @@ ENV TIME_LOG_FILE=conversion_time.log
 RUN soffice --headless --invisible --nologo --nolockcheck --nodefault --nofirststartwizard &
 
 CMD ["gunicorn", "--bind", "0.0.0.0:5000", "run:app"]
+
+LABEL org.opencontainers.image.source=https://github.com/VeniaminBalan/libreoffice-docx-to-pdf

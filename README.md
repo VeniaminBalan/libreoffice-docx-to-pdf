@@ -18,5 +18,11 @@ docker build -t beladevos/docx-pdf-converter-libreoffice
 docker run -p 5000:5000 beladevos/docx-pdf-converter-libreoffice
 ```
 
+## Request curl
+curl -X POST http://127.0.0.1:5000/convert \
+  -F "file=@/path/to/your/document.docx" \
+  -F "method=file"
+
+
 ## Lisence
 This project is licensed under the MIT License - see the LICENSE file for details.
