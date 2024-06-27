@@ -1,10 +1,10 @@
 ## Docker compose
 services: \
-  &emsp;converter:  
-    &emsp;&emsp;image: ghcr.io/veniaminbalan/docx2pdf:latest \
-   &emsp; &emsp;container_name: converter \
-    &emsp;&emsp;&emsp;ports: \
-     &emsp;&emsp;&emsp;&emsp; - "5000:5000"
+    &emsp;&emsp;converter:  
+    &emsp;&emsp;&emsp;&emsp;image: ghcr.io/veniaminbalan/docx2pdf:latest \
+    &emsp;&emsp;&emsp;&emsp;container_name: converter \
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ports: \
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - "5000:5000"
 
 ## Request curl
 curl -X POST http://127.0.0.1:5000/convert \
