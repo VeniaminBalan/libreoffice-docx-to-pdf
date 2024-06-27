@@ -1,9 +1,9 @@
 ## Docker compose
-services:
-  converter: 
-    image: ghcr.io/veniaminbalan/docx2pdf:latest
-    container_name: converter
-    ports:
+services: \
+  converter: \ 
+    image: ghcr.io/veniaminbalan/docx2pdf:latest \
+    container_name: converter \
+    ports: \
       - "5000:5000"
 
 ## Request curl
